@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Inicio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <style src="/static/css/main.css" rel="stylesheet"></style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="/static/images/logo.png">
+    <style>
+        header {
+            background-image: url(/static/images/backgrounds/header.jpg);
+            background-repeat: repeat;
+            background-size: 400px 300px;
+        }
+
+        main {
+            background-image: url(/static/images/backgrounds/exagons-green-neon.png);
+            background-repeat: repeat;
+            background-attachment: fixed;
+            background-size: 1600px;
+            /* Repite en ambas direcciones */
+            /* Ajusta el tamaño del patrón */
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar bg-base-100 shadow-sm sticky top-0 z-50">
+        <div class="flex-1">
+            <a href="index.html">
+                <img src="/static/images/logo.png" class="w-15 rounded-full" alt="Pana Gaming Logo">
+            </a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden lg:flex flex-none items-center space-x-4">
+            <ul class="menu menu-horizontal font-bold px-1">
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="the-backtrack-knights.html">The Backtrack Knights</a></li>
+            </ul>
+
+            <!-- Language Dropdown -->
+            <div class="dropdown dropdown-end ml-4">
+                <label tabindex="0" class="btn btn-ghost btn-sm">
+                    🌐 Language
+                </label>
+                <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-32">
+                    <li><a href="index.html">English</a></li>
+                    <li><a href="../index.html">Español</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Hamburger Button for Tablet/Mobile -->
+        <div class="flex-none lg:hidden">
+            <div class="dropdown dropdown-end">
+                <label tabindex="0" class="btn btn-ghost btn-square">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </label>
+                <ul tabindex="0"
+                    class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a href="index.html">About Us</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="the-backtrack-knights.html">The Backtrack Knights</a></li>
+                    <li class="divider"></li>
+                    <li>
+                        <div class="dropdown">
+                            <label tabindex="0" class="btn btn-ghost btn-sm w-full text-left">🌐 Language</label>
+                            <ul tabindex="0"
+                                class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-full mt-1">
+                                <li><a href="/eng/index.html">English</a></li>
+                                <li><a href="../index.html">Español</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="w-full min-h-screen bg-base-300">
+        <section class="bg-black bg-opacity-80 text-gray-200 py-20 px-6 lg:px-32 font-sans relative overflow-hidden">
+            <!-- Digital Background -->
+            <div class="absolute inset-0 bg-[url('/static/images/backgrounds/hexgrid.png')] opacity-10 animate-pulse">
+            </div>
+
+            <!-- Main Content -->
+            <div class="relative max-w-5xl mx-auto text-center">
+                <h1 class="text-5xl font-extrabold mb-6 text-[#00ff88] drop-shadow-[0_0_15px_#00ff88]">
+                    <span class="animate-pulse">Pana Gaming</span>
+                </h1>
+                <br>
+                <img src="/static/images/panagaming-wallpaper.jpg" alt="Pana Gaming Wallpaper"
+                    class="w-full rounded-lg shadow shadow-green-500 object-cover" />
+
+                <br><br>
+                <h2 class="text-xl font-bold text-gray-400 max-w-2xl mx-auto mb-12">
+                    United by creativity, empathy, and the desire to build something greater than ourselves.
+                </h2>
+                <br><br>
+            </div>
+
+            <!-- Cards Section -->
+            <div class="relative max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Who We Are -->
+                <div
+                    class="card bg-[#0a0f0a]/70 backdrop-blur-md border border-[#00ff88]/40 hover:border-[#00ff88] hover:shadow-[0_0_25px_#00ff88] transition-all duration-300">
+                    <div class="card-body">
+                        <h2 class="card-title text-[#00ff88]">Who We Are</h2>
+                        <p class="text-gray-300 leading-relaxed">
+                            <strong>Pana Gaming</strong> is a community united by a common purpose: connecting people
+                            from all over the world through gaming, creativity, and mutual understanding. We provide a
+                            space where everyone can express themselves, grow, and be part of something meaningful.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Our Values -->
+                <div
+                    class="card bg-[#0a0f0a]/70 backdrop-blur-md border border-[#00ff88]/40 hover:border-[#00ff88] hover:shadow-[0_0_25px_#00ff88] transition-all duration-300">
+                    <div class="card-body">
+                        <h2 class="card-title text-[#00ff88]">Our Values</h2>
+                        <p class="text-gray-300 leading-relaxed">
+                            We are built on <strong>equality</strong>, <strong>inclusion</strong>,
+                            <strong>loyalty</strong>,
+                            and <strong>mutual respect</strong>. At Pana Gaming, there are no barriers between genders,
+                            cultures, or abilities; every voice and every story matters.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Neurodiversity Commitment -->
+                <div
+                    class="card bg-[#0a0f0a]/70 backdrop-blur-md border border-[#00ff88]/40 hover:border-[#00ff88] hover:shadow-[0_0_25px_#00ff88] transition-all duration-300">
+                    <div class="card-body">
+                        <h2 class="card-title text-[#00ff88]">Commitment to Neurodiversity</h2>
+                        <p class="text-gray-300 leading-relaxed">
+                            We embrace neurological diversity as a source of creativity and insight that enriches
+                            everyone. <strong>Pana Gaming</strong> is a safe space for people with
+                            <strong>autism</strong>,
+                            <strong>ADHD</strong>, and other conditions, where they can feel understood, accepted, and
+                            valued for who they truly are.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Our Vision -->
+                <div
+                    class="card bg-[#0a0f0a]/70 backdrop-blur-md border border-[#00ff88]/40 hover:border-[#00ff88] hover:shadow-[0_0_25px_#00ff88] transition-all duration-300">
+                    <div class="card-body">
+                        <h2 class="card-title text-[#00ff88]">Our Vision</h2>
+                        <p class="text-gray-300 leading-relaxed">
+                            We believe in a future where <strong>technology</strong>, <strong>art</strong>, and
+                            <strong>gaming</strong> unite to inspire empathy and personal growth.
+                            We are a <strong>brotherhood</strong> demonstrating that unity, freedom, and respect can
+                            transform the network into a conscious and human space.
+                            But our vision goes further: the connection in the network is only the first step toward a
+                            future where we will also expand into the real world, bringing the spirit of
+                            <strong>Pana Gaming</strong> beyond the screen and building a new way of living and
+                            creating together.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <br><br><br><br><br>
+            <div class="hero-content mx-auto flex flex-col lg:flex-row-reverse items-center justify-center gap-10">
+                <iframe src="https://discordapp.com/widget?id=793956939687133184&theme=dark" width="300" height="400"
+                    allowtransparency="true" frameborder="0"
+                    sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+                    class="max-w-xs sm:max-w-sm md:max-w-md rounded-lg shadow-lg shadow-purple-500"></iframe>
+
+                <div class="text-center lg:text-left max-w-3xl">
+                    <h1 class="text-3xl md:text-5xl font-bold mb-4">
+                        Discord Server
+                    </h1>
+                    <p class="text-base md:text-lg leading-relaxed mb-6">
+                        Join our Discord server to meet the entire Pana Gaming community and share your interests
+                        with us. <strong>Pana Gaming is your home.</strong>
+                    </p>
+                    <a href="https://discord.gg/wNnCkV6ZvJ"
+                        class="inline-flex items-center bg-white border border-gray-300 rounded-lg shadow-md px-5 py-2 text-sm md:text-base font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                        <svg class="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 -28.5 256 256"
+                            preserveAspectRatio="xMidYMid">
+                            <path
+                                d="M216.856339,16.5966031 C200.285002,8.84328665 182.566144,3.2084988 164.041564,0 C161.766523,4.11318106 159.108624,9.64549908 157.276099,14.0464379 C137.583995,11.0849896 118.072967,11.0849896 98.7430163,14.0464379 C96.9108417,9.64549908 94.1925838,4.11318106 91.8971895,0 C73.3526068,3.2084988 55.6133949,8.86399117 39.0420583,16.6376612 C5.61752293,67.146514 -3.4433191,116.400813 1.08711069,164.955721 C23.2560196,181.510915 44.7403634,191.567697 65.8621325,198.148576 C71.0772151,190.971126 75.7283628,183.341335 79.7352139,175.300261 C72.104019,172.400575 64.7949724,168.822202 57.8887866,164.667963 C59.7209612,163.310589 61.5131304,161.891452 63.2445898,160.431257 C105.36741,180.133187 151.134928,180.133187 192.754523,160.431257 C194.506336,161.891452 196.298154,163.310589 198.110326,164.667963 C191.183787,168.842556 183.854737,172.420929 176.223542,175.320965 C180.230393,183.341335 184.861538,190.991831 190.096624,198.16893 C211.238746,191.588051 232.743023,181.531619 254.911949,164.955721 C260.227747,108.668201 245.831087,59.8662432 216.856339,16.5966031 Z M85.4738752,135.09489 C72.8290281,135.09489 62.4592217,123.290155 62.4592217,108.914901 C62.4592217,94.5396472 72.607595,82.7145587 85.4738752,82.7145587 C98.3405064,82.7145587 108.709962,94.5189427 108.488529,108.914901 C108.508531,123.290155 98.3405064,135.09489 85.4738752,135.09489 Z M170.525237,135.09489 C157.88039,135.09489 147.510584,123.290155 147.510584,108.914901 C147.510584,94.5396472 157.658606,82.7145587 170.525237,82.7145587 C183.391518,82.7145587 193.761324,94.5189427 193.539891,108.914901 C193.539891,123.290155 183.391518,135.09489 170.525237,135.09489 Z"
+                                fill="#5865F2" />
+                        </svg>
+                        <span class="font-semibold text-gray-900">Join</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4">
+        <aside class="text-center text-gray-400 py-6">
+            <p>
+                Copyright &copy; <span id="year"></span> - Todos los derechos reservados por Pana Gaming
+            </p>
+        </aside>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</body>
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</html>
+
+<!--ID <a
+            href="https://es.dreamstime.com/fondo-y-textura-negros-verdes-del-hexágono-negro-verde-con-real-ilustración-d-image139684310">139684310</a>
+        @ <a href="https://es.dreamstime.com/koo1980_info">Tanayus Saengpradit</a> | <a
+            href="https://es.dreamstime.com/stock-photos">Dreamstime.com</a>-->
