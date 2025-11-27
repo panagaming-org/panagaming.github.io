@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Inicio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <style src="/static/css/main.css" rel="stylesheet"></style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="../static/images/logo.png">
+    <style>
+        header {
+            background-image: url(../static/images/backgrounds/header.jpg);
+            background-repeat: repeat;
+            background-size: 400px 300px;
+        }
+
+        main {
+            background-image: url(../static/images/backgrounds/exagons-green-neon.png);
+            background-repeat: repeat;
+            background-attachment: fixed;
+            background-size: 1600px;
+            /* Repite en ambas direcciones */
+            /* Ajusta el tamaño del patrón */
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar bg-base-100 shadow-sm sticky top-0 z-50">
+        <div class="flex-1">
+            <a href="index.html">
+                <img src="../static/images/logo.png" class="w-15 rounded-full" alt="Pana Gaming Logo">
+            </a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden lg:flex flex-none items-center space-x-4">
+            <ul class="menu menu-horizontal font-bold px-1">
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="the-backtrack-knights.html">The Backtrack Knights</a></li>
+                <li><a href="donations.html">Donations</a></li>
+            </ul>
+
+            <!-- Language Dropdown -->
+            <div class="dropdown dropdown-end ml-4">
+                <label tabindex="0" class="btn btn-ghost btn-sm">
+                    🌐 Language
+                </label>
+                <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-32">
+                    <li><a href="donations.html">English</a></li>
+                    <li><a href="../donaciones.html">Español</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Hamburger Button for Tablet/Mobile -->
+        <div class="flex-none lg:hidden">
+            <div class="dropdown dropdown-end">
+                <label tabindex="0" class="btn btn-ghost btn-square">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </label>
+                <ul tabindex="0"
+                    class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a href="index.html">About Us</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="the-backtrack-knights.html">The Backtrack Knights</a></li>
+                    <li><a href="donations.html">Donations</a></li>
+                    <li class="divider"></li>
+                    <li>
+                        <div class="dropdown">
+                            <label tabindex="0" class="btn btn-ghost btn-sm w-full text-left">🌐 Language</label>
+                            <ul tabindex="0"
+                                class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-full mt-1">
+                                <li><a href="donations.html">English</a></li>
+                                <li><a href="../donaciones.html">Español</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="w-full min-h-screen bg-base-300">
+        <section
+            class="bg-black bg-opacity-80 text-gray-200 py-16 px-6 sm:px-12 md:px-20 lg:px-32 font-sans relative overflow-hidden">
+            <div class="relative max-w-5xl mx-auto text-center">
+                <!-- Title -->
+                <h1
+                    class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 text-[#00ff88] drop-shadow-[0_0_15px_#00ff88]">
+                    <span class="animate-pulse">Donations</span>
+                </h1>
+
+                <!-- Image -->
+                <img src="../static/images/donations.png" alt="Pana Gaming Wallpaper"
+                    class="w-full max-h-[400px] sm:max-h-[500px] md:max-h-[600px] rounded-lg shadow-lg shadow-green-500 object-cover" />
+
+                <div class="mt-8">
+                    <!-- Ko-fi Button -->
+                    <a href="https://ko-fi.com/TU_USUARIO" target="_blank"
+                        class="inline-flex items-center gap-3 sm:gap-4 bg-[#00e5ff] text-black px-4 sm:px-6 py-3 rounded-xl font-semibold text-base sm:text-lg shadow-lg shadow-[#00e5ff]/40 transition-colors hover:bg-[#5ff6ff]">
+
+                        <!-- Ko-fi SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 48 48"
+                            class="flex-shrink-0">
+                            <path fill="#29b6f6"
+                                d="M24,44C12.972,44,4,35.028,4,24S12.972,4,24,4s20,8.972,20,20S35.028,44,24,44z"></path>
+                            <path fill="#fff"
+                                d="M32.227,15L13,15c-1.105,0-2,0.895-2,2v13c0,1.657,1.343,3,3,3h14c1.657,0,3-1.343,3-3v-2h1.5c3.656,0,6.607-3.019,6.497-6.7C38.89,17.743,35.787,15,32.227,15z M32.5,24.5H31v-6h1.5c1.657,0,3,1.343,3,3v0C35.5,23.157,34.157,24.5,32.5,24.5z">
+                            </path>
+                            <path fill="#ef5350"
+                                d="M23.538,19c-1.084,0-2.022,0.605-2.538,1.498C20.484,19.605,19.546,19,18.462,19c-1.636,0-2.962,1.363-2.962,3.043C15.5,25.522,21,29,21,29s5.5-3.478,5.5-6.957C26.5,20.363,25.174,19,23.538,19z">
+                            </path>
+                        </svg>
+
+                        Support us on Ko-fi
+                    </a>
+                </div>
+
+                <!-- Text -->
+                <p class="text-base sm:text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mt-8 leading-relaxed">
+                    Your donation not only helps us fund this community and launch new projects, but also brings hope to
+                    many people.
+                    Pana Gaming was founded as a non-profit community, aiming to improve society and make sure no one
+                    feels alone.
+
+                    <br><br>
+
+                    With your support, we can continue our mission: providing you with a home, understanding, and real
+                    guidance.
+
+                    <br><br>
+
+                    At Pana Gaming, our Staff and Executive team have a very clear agreement: all donations are used
+                    exclusively to enrich this community, helping it grow, evolve, and remain true to our mission.
+                </p>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4">
+        <aside class="text-center text-gray-400 py-6">
+            <p>
+                Copyright &copy; <span id="year"></span> - Todos los derechos reservados por Pana Gaming
+            </p>
+        </aside>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</body>
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</html>
