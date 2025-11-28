@@ -6,7 +6,6 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>The Backtrack Knights</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -35,7 +34,7 @@
 </head>
 
 <body>
-    <header class="navbar bg-base-100 shadow-sm sticky top-0 z-50">
+    <header class="navbar bg-base-100 text-white font-bold shadow-sm sticky top-0 z-50">
         <div class="flex-1">
             <a href="index.html">
                 <img src="./static/images/logo.png" class="w-15 rounded-full" alt="Logo de Pana Gaming">
@@ -56,9 +55,9 @@
                 <label tabindex="0" class="btn btn-ghost btn-sm">
                     🌐 Idioma
                 </label>
-                <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-32">
-                    <li><a href="the-backtrack-knights.html">Español</a></li>
-                    <li><a href="./eng/the-backtrack-knights.html">English</a></li>
+                <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-zinc-900 rounded-box w-32">
+                    <li><a class="hover:bg-green-500" href="the-backtrack-knights.html">Español</a></li>
+                    <li><a class="hover:bg-green-500" href="./eng/the-backtrack-knights.html">English</a></li>
                 </ul>
             </div>
         </div>
@@ -66,7 +65,7 @@
         <!-- Botón hamburguesa para tablet/móvil -->
         <div class="flex-none lg:hidden">
             <div class="dropdown dropdown-end">
-                <label tabindex="0" class="btn btn-ghost btn-square">
+                <label tabindex="0" class="btn text-white btn-ghost btn-square">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -74,19 +73,19 @@
                     </svg>
                 </label>
                 <ul tabindex="0"
-                    class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                    <li><a href="index.html">Quiénes Somos</a></li>
-                    <li><a href="actividades.html">Actividades</a></li>
-                    <li><a href="the-backtrack-knights.html">Los Caballeros Backtrack</a></li>
-                    <li><a href="donaciones.html">Donaciones</a></li>
+                    class="menu bg-zinc-900 menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a class="hover:bg-green-500" href="index.html">Quiénes Somos</a></li>
+                    <li><a class="hover:bg-green-500" href="actividades.html">Actividades</a></li>
+                    <li><a class="hover:bg-green-500" href="the-backtrack-knights.html">Los Caballeros Backtrack</a></li>
+                    <li><a class="hover:bg-green-500" href="donaciones.html">Donaciones</a></li>
                     <li class="divider"></li>
                     <li>
                         <div class="dropdown">
                             <label tabindex="0" class="btn btn-ghost btn-sm w-full text-left">🌐 Idioma</label>
                             <ul tabindex="0"
-                                class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-full mt-1">
-                                <li><a href="the-backtrack-knights.html">Español</a></li>
-                                <li><a href="./eng/the-backtrack-knights.html">English</a></li>
+                                class="dropdown-content menu p-2 shadow bg-zinc-900 rounded-box w-full mt-1">
+                                <li><a class="hover:bg-green-500" href="the-backtrack-knights.html">Español</a></li>
+                                <li><a class="hover:bg-green-500" href="./eng/the-backtrack-knights.html">English</a></li>
                             </ul>
                         </div>
                     </li>
@@ -269,7 +268,7 @@
         </div>
 
     </main>
-    <footer class="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4">
+    <footer class="bg-zinc-900 footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4">
         <aside class="text-center text-gray-400 py-6">
             <p>
                 Copyright &copy; <span id="year"></span> - Todos los derechos reservados por Pana Gaming
